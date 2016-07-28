@@ -5,7 +5,7 @@
  */
 class Home extends Controller
 {
-    function index($data = '')
+    function index($data = [])
     {
         $data['name'] = 'World';
 
