@@ -5,9 +5,9 @@
  */
 class Home extends Controller
 {
-    function index($data = [])
+    public function index($data = [])
     {
-        $data['name'] = 'World';
+        $data['name'] = User::where('id', '1')->first()->name ?? 'World';
 
         $this->view('index', $data);
     }

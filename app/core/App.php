@@ -40,7 +40,7 @@ class App
         call_user_func_array([$this->controller, $this->method], $this->params);
     }
 
-    public function parseUrl()
+    private function parseUrl()
     {
         if (isset($_GET['url'])) {
             // We right trim the url for a '/' at the end because that would
